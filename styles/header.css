@@ -17,6 +17,7 @@
 .container {
   display: flex;
   align-items: center;
+  
 }
 
 .container__imagem {
@@ -28,6 +29,7 @@
   position: absolute; /* serve para deixar a lista abaixo do cabeçalho */
   top: 100%; /* tira 100% do cabeçalho e vai para baixo */
   width: 60vw;
+  
 }
 
 /* função para detectar que o checkbox está "checked", fazendo com que o 'lista-menu' apareça na tela. */
@@ -39,10 +41,12 @@
 .lista-menu__item {
   padding: 1em;
   background-color: var(--branco);
+  
 }
 
 .lista-menu__titulo {
   color: var(--laranja);
+  font-weight: 700;
 }
 
 .lista-menu__link {
@@ -54,6 +58,8 @@
   /*  */
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
+}
+
+.container__botao{
+     display: none;
 }
