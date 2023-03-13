@@ -15,6 +15,10 @@
   position: relative; /* colocado para o position: absolute ter efeito no lista-menu */
 }
 
+.logo{
+  margin: 0 1em;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -70,6 +74,11 @@
   display: none;
 }
 
+.opções{
+  display: none;
+}
+
+
 @media screen and (min-width: 1024px) {
     .container__titulo, .container__titulo--negrito{
        font-family: var(--fonte-secundaria);
@@ -84,5 +93,36 @@
 
     .container__titulo--negrito{
       font-weight: 700;
+    }
+
+    .opções{
+      display: flex;
+    }
+
+    .opções__item{
+      padding: 0 1em;
+      text-transform: uppercase;
+    }
+
+    .opções__link{
+      text-decoration: none;
+      color: var(--preto);
+    }
+
+    .imagem-coraçao{
+      display: none;
+    }
+
+    .cabeçalho__menu-hamburguer{
+      display: none;
+    }
+
+    .opções__botao:checked~ .lista-menu{
+      display: block;
+      width: auto;
+    }
+
+    .opções__botao{
+      display: none;
     }
 }
