@@ -40,3 +40,24 @@
      padding: 1.5em;
      border-top: 1px solid rgba(0, 0, 0, 0.558);
 }
+
+@media screen and (min-width: 1024px) {
+     .contatos{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .contatos__email{
+          width: 30%;
+     }
+
+     .contato__descriçao{
+          margin-right: 2em;
+          width: 30%;
+     }
+
+     .contatos__titulo{
+          font-size: 24px;
+     }
+}
