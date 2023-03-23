@@ -87,7 +87,7 @@
      }
 
     .lista-rodapé__titulo{
-          color: #858585;
+          color: var(--cinza-claro);
           text-transform: uppercase;
           font-size: 14px;
     }
@@ -95,4 +95,15 @@
     .lista-rodapé{
           display: block;
 }
+}
+
+@media screen and (min-width: 1728px) {
+     .lista-rodapé{
+          border-left: 1px solid var(--cinza-claro);
+          padding-left: 1em;
+     }
+
+     .footer{
+          padding: 3em;
+     }
 }

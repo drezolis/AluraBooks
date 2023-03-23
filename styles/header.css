@@ -7,6 +7,15 @@
   margin: 1em;
 }
 
+.container__botao:checked~.container__rotulo > .cabeçalho__menu-hamburguer{
+  background-image: url(../imagens/Menu\ Aberto.png);
+}
+
+.container__botao:checked~.container__rotulo{
+  background: var(--azul-degrade);
+}
+
+
 .cabeçalho {
   background-color: var(--branco);
   display: flex;
@@ -78,6 +87,10 @@
   display: none;
 }
 
+.container__imagem-texto{
+  display: none;
+}
+
 
 @media screen and (min-width: 1024px) {
     .container__titulo, .container__titulo--negrito{
@@ -124,5 +137,23 @@
 
     .opções__botao{
       display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container__imagem-link{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+      margin-left: 0;
+    }
+
+    .opções__link{
+      margin: auto;
+    }
+
+    .container__imagem-texto{
+      display: block;
     }
 }
